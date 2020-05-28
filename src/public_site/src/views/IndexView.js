@@ -13,7 +13,6 @@ const scripts = [
   fetch("js/webflow.js").then(body => body.text()),
   fetch("https://cdn.rawgit.com/iamceege/tooltipster/master/dist/js/tooltipster.bundle.min.js").then(body => body.text()),
   fetch("https://cdn.rawgit.com/maciejsaw/tooltipster-for-webflow/master/tooltipster-for-webflow.js").then(body => body.text()),
-  Promise.resolve("function startTimer(t,e){var o,n,r=t;setInterval(function(){o=parseInt(r/60,10),n=parseInt(r%60,10),o=o<10?\"0\"+o:o,n=n<10?\"0\"+n:n,e.textContent=\"Bid Now! 00:\"+o+\":\"+n+\" Left\",--r<0&&(r=t)},1e3)}window.onload=function(){var t=2700,e=document.querySelector(\"#countdown1\"),o=document.querySelector(\"#countdown2\"),n=document.querySelector(\"#countdown3\"),r=document.querySelector(\"#countdown4\"),c=document.querySelector(\"#countdown5\"),u=document.querySelector(\"#countdown6\");startTimer(t,e),startTimer(t,o),startTimer(t,n),startTimer(t,r),startTimer(t,c),startTimer(t,u)};"),
 ]
 
 let Controller
@@ -780,7 +779,8 @@ class IndexView extends React.Component {
                       <div className="af-class-meetingdetailtopdiv">
                         <div className="af-class-columns w-row">
                           <div className="af-class-column-10 w-col w-col-6">
-                            <div style={{paddingTop: '56.17021276595745%'}} id="w-node-f38501765ba7-a9ed24e8" className="w-embed-youtubevideo af-class-youtube"><iframe src="https://www.youtube.com/embed/jSsinLGGHH0?rel=0&controls=1&autoplay=1&mute=1&start=0" frameBorder={0} style={{position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', pointerEvents: 'auto'}} allow="autoplay; encrypted-media" allowFullScreen /></div>
+                            <div>
+                              <div style={{paddingTop: '56.17021276595745%'}} id="w-node-f38501765ba7-a9ed24e8" className="w-embed-youtubevideo af-class-youtube"><iframe src="https://www.youtube.com/embed/jSsinLGGHH0?rel=0&controls=1&autoplay=1&mute=1&start=0" frameBorder={0} style={{position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', pointerEvents: 'auto'}} allow="autoplay; encrypted-media" allowFullScreen /></div><img src="images/eliakim.jpeg" alt className="af-class-image-2" /></div>
                           </div>
                           <div className="w-col w-col-6">
                             <div className="af-class-div-block-11">

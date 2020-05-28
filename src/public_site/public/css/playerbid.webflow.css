@@ -1260,6 +1260,15 @@
     position: absolute;
     margin-left: -118px;
   }
+  .af-view .af-class-youtube {
+    display: none;
+    text-align: center;
+  }
+  .af-view .af-class-image-2 {
+    display: block;
+    max-height: 200px;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 767px) {
